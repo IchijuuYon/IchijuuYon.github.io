@@ -1,19 +1,37 @@
 /*
   This is some pretty epic CSS...
+
   To the stray dogs.
 */
+
+/* Tags */
 
 *{
   font-weight:lighter;
   font-family:verdana;
   text-align: left;
   color: white;
-  padding: 0.3cm;
+  padding: 12px;
   padding-left:0.1;
 }
 
+div, span, blockquote{
+  font-size:20px;
+}
+
+h1{
+  padding-left: 50px;
+}
+
+
+/* Classes */
+
 .noUnderline{
   text-decoration: none;
+}
+
+.cursor{
+  cursor: not-allowed;
 }
 
 .nav{
@@ -23,16 +41,16 @@
 
 .navbar{
   float: right;
-  background-color: rgba(0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 6px;
-}
-
-div, span, blockquote{
-  font-size:20px;
 }
 
 .right{
   float: right;
+}
+
+.left{
+  float: left;
 }
 
 .center{
@@ -42,6 +60,11 @@ div, span, blockquote{
 .background{
   background-color:rgba(0,0,0,0.6);
   width:fit-content;
+  border-radius: 5px;
+}
+
+.block{
+  display: block
 }
 
 /* Button Stuff */
@@ -53,7 +76,6 @@ div, span, blockquote{
   color: #FFFFFF;
   padding: 20px;
   width: fit-content;
-  height: fit-content;
   text-align: center;
   transition-duration: 0.4s;
   text-decoration: none;
@@ -72,12 +94,12 @@ div, span, blockquote{
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
-  transition: all 0.8s
+  transition: all 0.8s;
 }
 
 .button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
-  transition: 0s
+  transition: 0s;
 }
